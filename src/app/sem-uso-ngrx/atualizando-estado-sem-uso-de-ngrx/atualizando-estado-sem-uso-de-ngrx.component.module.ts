@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ExibeContadorComponent } from '../exibe-contador/exibe-contador.component';
 import { AtualizandoEstadoSemUsoDeNgrxComponent } from './atualizando-estado-sem-uso-de-ngrx.component';
+import { ExibeContadorSemNgrxComponent } from '../exibe-contador-sem-ngrx/exibe-contador-sem-ngrx.component';
 
 @NgModule({
   declarations: [
-    ExibeContadorComponent,
+    ExibeContadorSemNgrxComponent,
     AtualizandoEstadoSemUsoDeNgrxComponent,
   ],
   imports: [BrowserModule],

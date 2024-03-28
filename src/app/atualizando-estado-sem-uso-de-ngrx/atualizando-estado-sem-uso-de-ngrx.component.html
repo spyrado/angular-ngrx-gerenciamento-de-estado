@@ -1,0 +1,11 @@
+<h1>GERENCIANDO O ESTADO SEM USO DE NGRX</h1>
+<br />
+<h1>{{ contador }}</h1>
+<button (click)="contador = contador + 1">Incrementar</button>
+<button (click)="contador = contador - 1">Decrementar</button>
+
+<!-- 
+  sem um gerenciamento de estado sempre que outro componente depender do contador, eu vou precisar
+  passar essa informação via Input, ou vou precisar comunicar um componente pai via output.
+ -->
+<app-exibe-contador [contador]="contador"></app-exibe-contador>
